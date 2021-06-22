@@ -1,0 +1,341 @@
+
+html, body {height:100%;}
+
+body {
+    color: rgb(14, 13, 13);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image:url(../img/backgroud_body3.jpg)
+}
+
+
+header {
+    position: relative;
+     
+}
+ 
+main {
+     position: relative;
+}
+
+footer {
+    position: relative;
+    background-color: #333;
+    background-image: url('../img/fundo-rodape.png');
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
+    clear: both;
+}
+
+footer .meu-container {
+    position: relative;
+}
+
+
+p {
+    font-style: normal;
+    text-align:justify;
+    padding: 0 40px;
+    margin-top: 10px;
+    text-indent: 1em;
+    vertical-align: middle;
+}
+
+h1 {
+   
+    padding: 20px 0 0 20px;
+    padding: 10px;
+    
+   
+}
+
+.h2-meu {
+    border-bottom: 2px solid #333;
+    margin-top: 10px;
+
+}
+
+ul {
+    margin-top: 10px;    
+    margin-left: 10px;
+    list-style-type: square;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+li {
+    margin: 0;
+}
+
+figure {
+    background-color: #f2eded;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 15px;
+    margin: 30px;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+
+.meu-container {
+    width: 940px;
+    margin: 0px auto;
+}
+
+.logotipo {
+    background-image: none;
+    position:relative;
+    top:0px;
+    padding: 10px;
+}
+
+.menu-opcoes {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.menu-opcoes ul {
+    
+    position: relative;
+    font-size: 14px;
+    
+}
+
+.menu-opcoes a {
+    color: #036;
+}
+
+.menu-opcoes ul li {
+    padding-top: 20px;
+    margin-left: 10px;
+    display:inline;
+    text-align: right;
+    
+}
+
+.sacola {
+    background-image: url('../img/sacola.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    font-size: 12px;
+    text-align: right;
+    width: 199px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    
+}
+
+
+
+#rodape {
+    color: #fff;
+    background-color: #333;
+    padding: 45px 1 30px 0;
+    opacity: 0.8;
+    margin-top: 40px;
+    
+}
+
+#rodape img {
+    width: 94px;
+    vertical-align: middle;
+
+}
+
+#redes-sociais {
+    position: relative;
+    float: right;
+    bottom: 10px;
+
+}
+#redes-sociais img {
+    right: 30px;
+    width: 25px;
+    vertical-align: middle;
+}
+
+#redes-sociais li {
+    display: inline;
+    padding: 15px;
+    margin: 0;
+}
+
+#principal {
+    height: 550px;
+    
+}
+
+#destaques {
+    height: 150px;
+    
+}
+
+#busca, #menu-departamentos {
+    float: left;
+    width: 220px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+#menu-departamentos {
+    clear: left;
+    text-transform: uppercase;
+    background-color:rgb(243, 246, 247);
+}
+
+#menu-departamentos ul{
+    list-style: none;
+}
+
+#menu-departamentos .h2-meu {
+    border-bottom: 2px solid #333;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#banner-destaque {
+    padding: 0px 0 0 0px;
+    width: 660px;
+    clear: both;
+    display: inline-block;
+    
+}
+#banner-destaque img{
+    border-radius: 9px;
+    
+}
+
+#busca {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+#busca input[type="search"] {
+   width: 170px; 
+   border-radius:6px;
+}
+
+#busca button {
+    background-image: url('../img/busca.png');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    width: 20px;
+    height: 22px; 
+ }
+
+ .painel {
+     margin: 10px 0;
+     padding: 10px;
+     width: 445px;
+ }
+
+ .painel li {
+     display: inline-block;
+ }
+
+ .novidades{
+    float: left;
+    background-color:rgb(204, 204, 204,0.7) ;
+    background: linear-gradient(#3edee4,#a9dee6);
+    border-radius: 7px;
+ }
+
+ .mais-vendidos figure {
+    border-radius:5px;
+    box-shadow: inset -5px -5px 25px rgb(241, 59, 232);
+
+}
+
+.novidades figure {
+    border-radius:5px;
+    box-shadow: inset 0px 0px 25px purple;
+}
+
+ .mais-vendidos {
+     float: right;
+    
+     border-radius: 7px;
+ }
+
+ .painel figure {
+    width:95px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+ }
+ .painel img {
+    width:95px; 
+ }
+
+ .painel li:hover{
+     transform: scale(1.2);
+     transition:0.5s ease-in;
+ }
+ 
+ a:hover {
+    text-decoration: underline;
+    color: cornflowerblue;
+    
+}
+
+a:visited a:active {
+    text-decoration: none;
+    color: #333;
+}
+.link-ativo li{
+    border-radius: 5px;
+    background-color: rgb(8, 8, 8);
+}
+
+ .link-ativo {
+     background-color: #333;
+     color:#ccc;
+     border-radius: 15px;
+     padding: 13px;
+     line-height: 20px;
+ }
+ .link-ativo a{
+     color: #ccc;
+     margin: 5px;
+     text-decoration:none ;
+ }
+ 
+ #menu-departamentos li ul{
+     display: none;
+ }
+#menu-departamentos li:hover ul {
+    display:block;
+}
+
+#menu-departamentos li {
+    background-color: rgb(110, 216, 235);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.radius-dez {
+    border-radius:10px;
+    box-shadow: 10px 10px 10px rgb(110, 216, 235)
+}
+
+.modal-body{
+    padding-top: 100px;
+    padding: 0px ; 
+    padding-top: 50px;
+}
+h4{
+    color: rgb(206, 22, 190);
+}
