@@ -57,92 +57,157 @@
     </header>
     <!-- Fim do cabeçalho da página-->
     <!-- Início do Conteúdo principal-->
-    <main class="meu-container">
-        <h1 >  Finalização da Compra  </h1>
-        <h5>Falta pouco pra você entrar na moda! preencha o cadastro para finalizar a compra.</h5>
+    <main id="conteudo" class="meu-container gradiente">
+      <!-- Área  principal da página-->
+     <div id="principal">
+         <div class="container2-padrao paineis">
+             <div class="jumbotron jumbotron-fluid gradiente">
+                 <div class="container">
+                 <h1 class="display-4">Finalização da Compra</h1>
+                 <p class="lead">Estamos quase lá! Agora realizaremos o pagamento de suas compras.</p>
+                 </div>
+             </div>
+             
+             <form class="needs-validation" novalidate action="obrigado.html">
+                 <div class="form-row">
+                   <div class="form-group col-md-6">
+                     <label for="inputEmail4">Email</label>
+                     <input type="email" class="form-control" id="inputEmail4" placeholder="E-mail" required>
+                     <div class="valid-feedback">
+                         Tudo certo!
+                     </div>
+                   </div>
+                   <div class="form-group col-md-6">
+                     <label for="inputPassword4">Senha</label>
+                     <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" required>
+                   </div>
+                 </div>
+                 <div class="form-group">
+                   <label for="inputAddress">Endereço</label>
+                   <input type="text" class="form-control" id="inputAddress" placeholder="Informe seu endereço" required>
+                 </div>
+                 <div class="form-group">
+                   <label for="inputAddress2">Endereço 2</label>
+                   <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+                 </div>
+                 <div class="form-row">
+                   <div class="form-group col-md-6">
+                     <label for="inputCity">Cidade</label>
+                     <input type="text" class="form-control" id="inputCity" required>
+                   </div>
+                   <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputCity">C.P.F</label>
+                      <input type="text" class="form-control" id="inputCity" required>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity">R.G</label>
+                        <input type="text" class="form-control" id="inputCity" required>
+                      </div>
+                   <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputCity">TEL/residencial</label>
+                      <input type="text" class="form-control" id="inputCity" required>
+                    </div>
+                   <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputCity">Telefone</label>
+                      <input type="text" class="form-control" id="inputCity" required>
+                    </div>
+                   <div class="form-group col-md-4">
+                     <label for="inputEstado">Estado</label>
+                     <select id="inputEstado" class="form-control" required>
+                       <option value="">Escolher...</option>
+                       <option value="1">...</option>
+                     </select>
+                   </div>
+                   
+                   <div class="form-group col-md-2">
+                     <label for="inputCEP">CEP</label>
+                     <input type="text" class="form-control" id="inputCEP" required>
+                   </div>
+                 </div>
+                 <div class="form-group">
+                   <div class="form-check">
+                     <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                     <label class="form-check-label" for="gridCheck">
+                       Aceitar os <a href="#" data-toggle="modal" data-target="#ModalLongoExemplo">termos e condições da Mirror</a> Fashion
+                     </label>
+                   </div>
+                 </div>
+                 <button type="submit" class="btn btn-primary">Entrar</button>
+               </form>
+               <!-- Modal -->
+               <div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+                 <div class="modal-dialog" role="document">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                     <h5 class="modal-title" id="TituloModalLongoExemplo">Termos e Condições</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                         <span aria-hidden="true">&times;</span>
+                     </button>
+                     </div>
+                     <div class="modal-body">
+                         Texto do Modal
+                     </div>
+                     <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                     </div>
+                 </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </main>
+ <!-- FIM do Conteúdo principal-->
 
-        <!-- CSS Inline: Quando apenas a tag específica necessita de uma formatação particular 
-            1ª prioridade de renderização
-            style="color: blue; background-color: yellow"
-        --><form>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="E-mail">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Senha</label>
-      <input type="Senha" class="form-control" id="inputPassword4" placeholder="Senha" >
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputAddress">Endereço</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Informe seu endereço">
-  </div>
-  <div class="form-group">
-    <label for="inputAddress2">Endereço 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, casa, hosting">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">Cidade</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputState">Estado</label>
-      <select id="inputState" class="form-control">
-        <option selected>Escolher...</option>
-        <option>...</option>
-      </select>
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputZip">CEP</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Aceitar os <strong><a href="#">termos e comdiçoes</a></strong> da Mirror Fashion!
-      </label>
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Entrar</button>
-</form>
-        
-
-       
-      
-    </main>
-    <!-- Fim do conteúdo principal -->
-    <!-- Início do rodapé -->
-    <footer id="rodape">
-        <div class="meu-container">
-            <img src="img/logo-rodape.png" alt="logo-rodape.png">
-            &copy; copyrigth Mirror Fashion 2021
-        
-            <ul id="redes-sociais">
-                <li><a href="#"><img src="img/facebook.png"></li></a>
-                <li><a href="#"><img src="img/twitter.png"></li></a>
-                <li><a href="#"><img src="img/googleplus.png"></li></a>
-                <li><a href="#"><img src="img/intagram3.jpg"></li></a>
-            </ul>
-        </div>
-    </footer>    
-    <!-- Fim do rodapé -->
-
-      <!--popper e bootstrap js separados-->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
-  </script>
-
+ <!-- Conteúdo do rodapé-->
+ <footer id="rodape">
+   <div class="meu-container">
+       <img src="img/logo-rodape.png" alt="logo-rodape.png">
+       &copy; copyrigth Mirror Fashion 2021
+   
+       <ul id="redes-sociais">
+           <li><img src="img/facebook.png"></li>
+           <li><img src="img/twitter.png"></li>
+           <li><img src="img/googleplus.png"></li>
+           <li><img src="img/intagram3.jpg"></li>
+       </ul>
+   </div>
+</footer>    
+ <!-- FIM do Conteúdo do rodapé--> 
 </body>
+<!-- Bootstrap CDN -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 
+
+<!--Bootstrap Local
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+-->
+
+<script>
+ // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
+ (function() {
+   'use strict';
+   window.addEventListener('load', function() {
+     // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
+     var forms = document.getElementsByClassName('needs-validation');
+     // Faz um loop neles e evita o envio
+     var validation = Array.prototype.filter.call(forms, function(form) {
+       form.addEventListener('submit', function(event) {
+         if (form.checkValidity() === false) {
+           event.preventDefault();
+           event.stopPropagation();
+         }
+         form.classList.add('was-validated');
+       }, false);
+     });
+   }, false);
+ })();
+</script>
 </html>
